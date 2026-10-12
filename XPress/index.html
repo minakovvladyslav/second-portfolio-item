@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=_, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/swiper-styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>XPress</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            <img src="./image/logo.svg" alt="logo" class="header__img" />
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">Home</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">About</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Blogs</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Contact</a>
+              </li>
+            </ul>
+            <button class="header__burger burger" type="button">
+              <span class="burger__bread"></span
+              ><span class="burger__cutlet"></span>
+              <span class="burger__bread"></span>
+            </button>
+          </nav>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__hero hero hero--nomargin">
+          <div class="hero__container">
+            <div class="hero__shopping">
+              <span class="hero__collection">Trendy Collection</span>
+              <h1 class="hero__title">Shop For <br />What You Want</h1>
+              <div class="hero__text">
+                <p>
+                  Shops are necessary places, where people go to buy their
+                  necessary things. Shopping is something which is loved
+                </p>
+              </div>
+              <a href="#" class="hero__link-shopping"
+                >Start Shopping
+                <div class="hero__arrow-picture">
+                  <img
+                    src="./image/icons/arrow.svg"
+                    alt="arrow"
+                    class="hero__arrow"
+                  /></div
+              ></a>
+            </div>
+            <div class="hero__content">
+              <div class="hero__sail">
+                <picture class="hero__picture">
+                  <source
+                    srcset="./image/hero/woman-2x-avif.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    srcset="
+                      ./image/hero/woman-2x.png 1x,
+                      ./image/hero/woman-2x.png 2x,
+                      ./image/hero/woman-3x.png 3x
+                    "
+                    src="./image/hero/woman-2x.png"
+                    alt="women"
+                    class="hero__img"
+                  />
+                </picture>
+                <div class="hero__offer">
+                  <span>offer</span>
+                  <span>20% off</span>
+                </div>
+              </div>
+              <div class="hero__circle"></div>
+              <div class="hero__circle"></div>
+              <div class="hero__circle"></div>
+              <div class="hero__circle"></div>
+              <div class="hero__circle"></div>
+              <div class="hero__circle"></div>
+              <div class="hero__circle"></div>
+            </div>
+          </div>
+        </section>
+        <div class="page__sub-gallery gallery-sub">
+          <div class="gallery-sub__container">
+            <div class="gallery-sub__swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="gallery-sub__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="gallery-sub__slide swiper-slide">
+                  <div class="gallery-sub__picture">
+                    <img
+                      srcset="
+                        ./image/sub-swiper/first-2x.jpg 1x,
+                        ./image/sub-swiper/first-2x.jpg 2x,
+                        ./image/sub-swiper/first-3x.jpg 3x
+                      "
+                      src="./image/sub-swiper/first-2x.jpg"
+                      alt="photo"
+                      class="gallery-sub__img"
+                    />
+                  </div>
+                </div>
+                <div class="gallery-sub__slide swiper-slide">
+                  <div class="gallery-sub__picture">
+                    <img
+                      srcset="
+                        ./image/sub-swiper/second-2x.jpg 1x,
+                        ./image/sub-swiper/second-2x.jpg 2x,
+                        ./image/sub-swiper/second-3x.jpg 3x
+                      "
+                      src="./image/sub-swiper/second-2x.jpg"
+                      alt="photo"
+                      class="gallery-sub__img"
+                    />
+                  </div>
+                </div>
+                <div class="gallery-sub__slide swiper-slide">
+                  <div class="gallery-sub__picture">
+                    <img
+                      srcset="
+                        ./image/sub-swiper/third-2x.jpg 1x,
+                        ./image/sub-swiper/third-2x.jpg 2x,
+                        ./image/sub-swiper/third-3x.jpg 3x
+                      "
+                      src="./image/sub-swiper/third-2x.jpg"
+                      alt="photo"
+                      class="gallery-sub__img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="gallery-sub__pagination swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="page__arrival arrival-gallery">
+          <div class="arrival-gallery__container">
+            <h2 class="arrival-gallery__title">New Arrival</h2>
+            <div class="arrival-gallery__animation-scroll scroll-animation">
+              <div class="scroll-animation__picture">
+                <img
+                  src="./image/scroll/finger.svg"
+                  alt="finger"
+                  class="scroll-animation__img"
+                />
+              </div>
+              <div class="scroll-animation__item"><span>scroll</span></div>
+              <div class="scroll-animation__item"><span>scroll</span></div>
+              <div class="scroll-animation__item"><span>scroll</span></div>
+              <div class="scroll-animation__item"><span>scroll</span></div>
+              <div class="scroll-animation__item"><span>scroll</span></div>
+            </div>
+            <ul class="arrival-gallery__list">
+              <li class="arrival-gallery__item">
+                <figure class="arrival-gallery__figure">
+                  <img
+                    srcset="
+                      ./image/arrival/first-2x.jpg 1x,
+                      ./image/arrival/first-2x.jpg 2x,
+                      ./image/arrival/first-3x.jpg 3x
+                    "
+                    src="./image/arrival/first-2x.jpg"
+                    alt=""
+                    class="arrival-gallery__img arrival-gallery__img--370-width-top-center"
+                  />
+                </figure>
+              </li>
+              <li class="arrival-gallery__item">
+                <figure class="arrival-gallery__figure">
+                  <img
+                    srcset="
+                      ./image/arrival/second-2x.jpg 1x,
+                      ./image/arrival/second-2x.jpg 2x,
+                      ./image/arrival/second-3x.jpg 3x
+                    "
+                    src="./image/arrival/second-2x.jpg"
+                    alt=""
+                    class="arrival-gallery__img"
+                  />
+                </figure>
+              </li>
+              <li class="arrival-gallery__item">
+                <figure class="arrival-gallery__figure">
+                  <img
+                    srcset="
+                      ./image/arrival/third-2x.jpg 1x,
+                      ./image/arrival/third-2x.jpg 2x,
+                      ./image/arrival/third-3x.jpg 3x
+                    "
+                    src="./image/arrival/third-2x.jpg"
+                    alt=""
+                    class="arrival-gallery__img"
+                  />
+                </figure>
+              </li>
+              <li class="arrival-gallery__item">
+                <figure class="arrival-gallery__figure">
+                  <img
+                    srcset="
+                      ./image/arrival/fourth-2x.jpg 1x,
+                      ./image/arrival/fourth-2x.jpg 2x,
+                      ./image/arrival/fourth-3x.jpg 3x
+                    "
+                    src="./image/arrival/fourth-2x.jpg"
+                    alt=""
+                    class="arrival-gallery__img"
+                  />
+                </figure>
+              </li>
+              <li class="arrival-gallery__item">
+                <figure class="arrival-gallery__figure">
+                  <img
+                    srcset="
+                      ./image/arrival/fifth-2x.jpg 1x,
+                      ./image/arrival/fifth-2x.jpg 2x,
+                      ./image/arrival/fifth-3x.jpg 3x
+                    "
+                    src="./image/arrival/fifth-2x.jpg"
+                    alt=""
+                    class="arrival-gallery__img"
+                  />
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="page__top-selling selling-top">
+          <div class="selling-top__container">
+            <h2 class="selling-top__title">Top Selling Products</h2>
+            <div class="selling-top__text">
+              <p>
+                We too believe that shopping is relaxing is thing as whenever I
+                get too stressed or tensed. I often go for shopping.
+              </p>
+            </div>
+            <div class="selling-top__swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="selling-top__swiper-wraper swiper-wrapper">
+                <!-- Slides -->
+                <div class="selling-top__slide swiper-slide">
+                  <div class="selling-top__picture">
+                    <img
+                      srcset="
+                        ./image/selling-swiper/first-2x.jpg 1x,
+                        ./image/selling-swiper/first-2x.jpg 2x,
+                        ./image/selling-swiper/first-3x.jpg 3x
+                      "
+                      src="./image/selling-swiper/second-2x.jpg"
+                      alt="photo"
+                      class="selling-top__img"
+                    />
+                  </div>
+                </div>
+                <div class="selling-top__slide swiper-slide">
+                  <div class="selling-top__picture">
+                    <img
+                      srcset="
+                        ./image/selling-swiper/second-2x.jpg 1x,
+                        ./image/selling-swiper/second-2x.jpg 2x,
+                        ./image/selling-swiper/second-2x.jpg 3x
+                      "
+                      src="./image/selling-swiper/second-2x.jpg"
+                      alt="photo"
+                      class="selling-top__img selling-top__img--center-right"
+                    />
+                  </div>
+                </div>
+                <div class="selling-top__slide swiper-slide">
+                  <div class="selling-top__picture">
+                    <img
+                      srcset="
+                        ./image/selling-swiper/main-2x.jpg 1x,
+                        ./image/selling-swiper/main-2x.jpg 2x,
+                        ./image/selling-swiper/main-3x.jpg 3x
+                      "
+                      src="./image/selling-swiper/main-2x.jpg"
+                      alt="photo"
+                      class="selling-top__img"
+                    />
+                  </div>
+                </div>
+                <div class="selling-top__slide swiper-slide">
+                  <div class="selling-top__picture">
+                    <img
+                      srcset="
+                        ./image/selling-swiper/fourth-2x.jpg 1x,
+                        ./image/selling-swiper/fourth-2x.jpg 2x,
+                        ./image/selling-swiper/fourth-3x.jpg 3x
+                      "
+                      src="./image/selling-swiper/fourth-2x.jpg"
+                      alt="photo"
+                      class="selling-top__img selling-top__img--center-left"
+                    />
+                  </div>
+                </div>
+                <div class="selling-top__slide swiper-slide">
+                  <div class="selling-top__picture">
+                    <img
+                      srcset="
+                        ./image/selling-swiper/fifth-2x.jpg 1x,
+                        ./image/selling-swiper/fifth-2x.jpg 2x,
+                        ./image/selling-swiper/fifth-3x.jpg 3x
+                      "
+                      src="./image/selling-swiper/fifth-2x.jpg"
+                      alt="photo"
+                      class="selling-top__img selling-top__img--center-right"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div
+                class="selling-top__slide-pagination swiper-pagination"
+              ></div>
+            </div>
+          </div>
+        </section>
+        <section class="page__speciality our-speciality">
+          <div class="our-speciality__container">
+            <h2 class="our-speciality__title">Our Speciality</h2>
+            <div class="our-speciality__text">
+              <p>
+                We too believe that shopping is relaxing is thing as whenever I
+                get too stressed or tensed. I often go for
+              </p>
+            </div>
+            <ul class="our-speciality__list cards-speciality">
+              <li class="cards-speciality__item">
+                <div
+                  class="cards-speciality__icon cards-speciality__icon--icon-hand"
+                ></div>
+                <h3 class="cards-speciality__title">24/7 Services</h3>
+                <div class="cards-speciality__text">
+                  <p>
+                    Shops are necessary places,a where people go to buy is on
+                    their
+                  </p>
+                </div>
+              </li>
+              <li class="cards-speciality__item">
+                <div
+                  class="cards-speciality__icon cards-speciality__icon--icon-exchange"
+                ></div>
+                <h3 class="cards-speciality__title">Exchange Opportunites</h3>
+                <div class="cards-speciality__text">
+                  <p>
+                    Shops are necessary places,a where people go to buy is on
+                    their
+                  </p>
+                </div>
+              </li>
+              <li class="cards-speciality__item">
+                <div
+                  class="cards-speciality__icon cards-speciality__icon--icon-offer"
+                ></div>
+                <h3 class="cards-speciality__title">More Then Offer</h3>
+                <div class="cards-speciality__text">
+                  <p>
+                    Shops are necessary places,a where people go to buy is on
+                    their
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="page__brands our-brands">
+          <div class="our-brands__container">
+            <h2 class="our-brands__title">Our Top Brand</h2>
+          </div>
+          <div class="our-brands__body">
+            <div class="our-brands__container sub-container">
+              <ul class="our-brands__list">
+                <li class="our-brands__item">
+                  <a href="#" class="our-brands__link">
+                    <picture class="our-brands__picture">
+                      <source
+                        srcset="./image/brands/first-2x.avif"
+                        type="image/avif"
+                      />
+                      <img
+                        srcset="
+                          ./image/brands/first-2x.png 1x,
+                          ./image/brands/first-2x.png 2x,
+                          ./image/brands/first-3x.png 3x
+                        "
+                        src="./image/brands/first-2x.png"
+                        alt="brand"
+                        class="our-brands__img"
+                      />
+                    </picture>
+                  </a>
+                </li>
+                <li class="our-brands__item">
+                  <a href="#" class="our-brands__link">
+                    <picture class="our-brands__picture">
+                      <source
+                        srcset="./image/brands/second-2x.avif"
+                        type="image/avif"
+                      />
+                      <img
+                        srcset="
+                          ./image/brands/second-2x.png 1x,
+                          ./image/brands/second-2x.png 2x,
+                          ./image/brands/second-3x.png 3x
+                        "
+                        src="./image/brands/second-2x.png"
+                        alt="brand"
+                        class="our-brands__img"
+                      />
+                    </picture>
+                  </a>
+                </li>
+                <li class="our-brands__item">
+                  <a href="#" class="our-brands__link">
+                    <picture class="our-brands__picture">
+                      <source
+                        srcset="./image/brands/third-2x.avif"
+                        type="image/avif"
+                      />
+                      <img
+                        srcset="
+                          ./image/brands/third-2x.png 1x,
+                          ./image/brands/third-2x.png 2x,
+                          ./image/brands/third-3x.png 3x
+                        "
+                        src="./image/brands/third-2x.png"
+                        alt="brand"
+                        class="our-brands__img"
+                      />
+                    </picture>
+                  </a>
+                </li>
+                <li class="our-brands__item">
+                  <a href="#" class="our-brands__link">
+                    <picture class="our-brands__picture">
+                      <source
+                        srcset="./image/brands/fourth-2x.avif"
+                        type="image/avif"
+                      />
+                      <img
+                        srcset="
+                          ./image/brands/fourth-2x.png 1x,
+                          ./image/brands/fourth-2x.png 2x,
+                          ./image/brands/fourth-3x.png 3x
+                        "
+                        src="./image/brands/fourth-2x.png"
+                        alt="brand"
+                        class="our-brands__img"
+                      />
+                    </picture>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section class="page__posts recent-posts">
+          <div class="recent-posts__container">
+            <h2 class="recent-posts__title">Recent Blog Posts</h2>
+            <div class="recent-posts__body">
+              <article class="recent-posts__item post-recent">
+                <picture class="post-recent__picture">
+                  <source
+                    srcset="./image/posts/first-3x.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    srcset="
+                      ./image/posts/first-2x.jpg 1x,
+                      ./image/posts/first-2x.jpg 2x,
+                      ./image/posts/first-3x.jpg 3x
+                    "
+                    src="./image/posts/first-2x.jpg"
+                    alt="parfume"
+                    class="post-recent__img"
+                  />
+                </picture>
+                <div class="post-recent__content">
+                  <h4 class="post-recent__title">Foog Parfume</h4>
+                  <div class="post-recent__text">
+                    <p>
+                      I too believe that shopping is relaxing is thing as
+                      whenever I get too stressed or tensed. I often go for
+                      shopping.
+                    </p>
+                  </div>
+                  <div class="post-recent__footer">
+                    <a href="#" class="post-recent__link link-orange"
+                      >See more</a
+                    >
+                    <data value="17-06-2020" class="post-recent__data"
+                      >Jul 17 2020
+                    </data>
+                  </div>
+                </div>
+              </article>
+              <article class="recent-posts__item post-recent">
+                <picture class="post-recent__picture">
+                  <source
+                    srcset="./image/posts/second-3x.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    srcset="
+                      ./image/posts/second-2x.jpg 1x,
+                      ./image/posts/second-2x.jpg 2x,
+                      ./image/posts/second-3x.jpg 3x
+                    "
+                    src="./image/posts/second-2x.jpg"
+                    alt="parfume"
+                    class="post-recent__img"
+                  />
+                </picture>
+                <div class="post-recent__content">
+                  <h4 class="post-recent__title">White Musk Lotion</h4>
+                  <div class="post-recent__text">
+                    <p>
+                      I too believe that shopping is relaxing is thing as
+                      whenever I get too stressed or tensed. I often go for
+                      shopping.
+                    </p>
+                  </div>
+                  <div class="post-recent__footer">
+                    <a href="#" class="post-recent__link link-orange"
+                      >See more</a
+                    >
+                    <data value="17-06-2020" class="post-recent__data"
+                      >Jul 17 2020
+                    </data>
+                  </div>
+                </div>
+              </article>
+              <article class="recent-posts__item post-recent">
+                <picture class="post-recent__picture">
+                  <source
+                    srcset="./image/posts/third-3x.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    srcset="
+                      ./image/posts/third-2x.jpg 1x,
+                      ./image/posts/third-2x.jpg 2x,
+                      ./image/posts/third-3x.jpg 3x
+                    "
+                    src="./image/posts/third-2x.jpg"
+                    alt="parfume"
+                    class="post-recent__img"
+                  />
+                </picture>
+                <div class="post-recent__content">
+                  <h4 class="post-recent__title">Cosmatics Products</h4>
+                  <div class="post-recent__text">
+                    <p>
+                      I too believe that shopping is relaxing is thing as
+                      whenever I get too stressed or tensed. I often go for
+                      shopping.
+                    </p>
+                  </div>
+                  <div class="post-recent__footer">
+                    <a href="#" class="post-recent__link link-orange"
+                      >See more</a
+                    >
+                    <data value="17-06-2020" class="post-recent__data"
+                      >Jul 17 2020
+                    </data>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__column">
+            <figure class="footer__picture">
+              <img
+                class="footer__logo"
+                src="./image/logo-white.svg"
+                alt="logo"
+              />
+            </figure>
+            <div class="footer__text">
+              <p>Contrary to popular is not simply random text. It has</p>
+            </div>
+            <ul class="footer__icon-list">
+              <li class="footer__socials">
+                <a
+                  href="#"
+                  class="footer__social footer__social--icon-facebook"
+                ></a>
+              </li>
+              <li class="footer__socials">
+                <a
+                  href="#"
+                  class="footer__social footer__social--icon-instagram"
+                ></a>
+              </li>
+              <li class="footer__socials">
+                <a href="#" class="footer__social footer__social--icon-x"></a>
+              </li>
+              <li class="footer__socials">
+                <a
+                  href="#"
+                  class="footer__social footer__social--icon-linkendin"
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <button type="button" tabindex="-1" class="footer__title">
+              Quick Link
+              <div class="footer__arrow">
+                <img
+                  src="./image/icons/arrow.svg"
+                  alt="arrow"
+                  class="footer__icon"
+                />
+              </div>
+            </button>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link link">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link link">carrer</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link link">New Arrial</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <button type="button" tabindex="-1" class="footer__title">
+              Contact us
+              <div class="footer__arrow">
+                <img
+                  src="./image/icons/arrow.svg"
+                  alt="arrow"
+                  class="footer__icon"
+                />
+              </div>
+            </button>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link link">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link link">carrer</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link link">New Arrial</a>
+              </li>
+            </ul>
+          </div>
+          <address class="footer__column">
+            <button type="button" tabindex="-1" class="footer__title">
+              Support
+              <div class="footer__arrow">
+                <img
+                  src="./image/icons/arrow.svg"
+                  alt="arrow"
+                  class="footer__icon"
+                />
+              </div>
+            </button>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <span id="first-span" class="footer__link"
+                  >+880 1767812324</span
+                >
+                <a
+                  id="second-link"
+                  href="callto:+880 1767812324"
+                  class="footer__link link"
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a href="mailto:mb1673072@gmail.com" class="footer__link link"
+                  >mb1673072@gmail.com</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link link">37/1 Aleraza Market</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </footer>
+    </div>
+    <div class="preloader">
+      <div class="preloader__background-part"></div>
+      <div class="preloader__background-part">
+      <div class="preloader__picture">
+        <img src="./image/preloader/shopping-bag.svg" alt="shopping-bag" class="preloader__img">
+      </div>
+      </div>
+      <div class="preloader__background-part"></div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/preloader.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+  </body>
+</html>
