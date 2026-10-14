@@ -1,0 +1,15 @@
+@use "_mixins" as *;
+
+@mixin type($type:"h1") {
+  @if $type == "h1" {
+    @include adaptiveValue("font-size", 61, 40);
+    line-height: 1.2;
+    font-weight: 600;
+  } @if $type == "h2" {
+    font-weight: 600;
+    @include adaptiveValue("font-size", 44, 30);
+    line-height: 1.20;
+  } @else {
+    line-height: 1.4;
+  }
+}
